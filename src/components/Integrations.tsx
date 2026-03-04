@@ -107,8 +107,8 @@ export default function Integrations() {
     return (
         <section className={styles.integrations}>
             <div className={styles.header}>
-                <h2>Sem costuras. Suas ferramentas num só lugar</h2>
-                <p>Integramos seu WhatsApp, Meta Ads, Google e CRM diretamente aos nossos Agentes de IA para um fluxo contínuo de conversão.</p>
+                <h2>O seu paciente não espera. Nós também não.</h2>
+                <p>Integramos os seus canais de aquisição numa única máquina de marcação. Feche orçamentos diretamente pelo WhatsApp e centralize no seu sistema de gestão (CRM).</p>
             </div>
 
             <div className={styles.mapContainer} ref={containerRef}>

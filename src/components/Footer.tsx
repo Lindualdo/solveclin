@@ -7,35 +7,36 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.content}>
                 <div className={styles.brand}>
-                    <h3>Solveclin</h3>
+                    <h3>SolveClin</h3>
                     <p>
-                        Capacitando clínicas através de tecnologia inteligente e processos otimizados.
-                        Sua parceira na jornada de transformação digital.
+                        Engenharia de processos e automação inteligente. Ajudamos clínicas em Lisboa e Portugal inteiro a eliminar custos invisíveis e escalar receita.
+                    </p>
+                    <p style={{ marginTop: '16px', fontSize: '0.875rem', opacity: 0.8 }}>
+                        Especialistas com +20 anos em TI Corporativa.
                     </p>
                 </div>
 
                 <div className={styles.links}>
                     <div className={styles.linkGroup}>
-                        <h4>Empresa</h4>
+                        <h4>Serviços</h4>
                         <ul>
-                            <li><Link href="#features">Sobre nós</Link></li>
-                            <li><Link href="#solutions">Soluções</Link></li>
-                            <li><Link href="#contact">Carreiras</Link></li>
+                            <li><Link href="#features">Diagnóstico 360º</Link></li>
+                            <li><Link href="#features">Agentes de IA</Link></li>
+                            <li><Link href="#features">Engenharia de Processos</Link></li>
                         </ul>
                     </div>
                     <div className={styles.linkGroup}>
-                        <h4>Legal</h4>
+                        <h4>SolveClin</h4>
                         <ul>
-                            <li><Link href="/privacy">Privacidade</Link></li>
-                            <li><Link href="/terms">Termos</Link></li>
+                            <li><Link href="#pricing">Investimento</Link></li>
+                            <li><Link href="#faq">Perguntas Frequentes</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div className={styles.bottom}>
-                <p>&copy; 2026 Solveclin. Todos os direitos reservados.</p>
-                <p>Feito com ❤️ por Antigravity</p>
+                <p>&copy; 2026 SolveClin. Lisboa, Portugal. Todos os direitos reservados.</p>
             </div>
         </footer>
     );

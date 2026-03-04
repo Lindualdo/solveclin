@@ -6,21 +6,21 @@ import styles from './Testimonials.module.css';
 
 const testimonials = [
     {
-        quote: "A Solveclin transformou a nossa recepção. Hoje não perdemos mais nenhum contato no WhatsApp.",
+        quote: "Recuperámos mais de 3.500€ em orçamentos perdidos só no primeiro mês. O Agente de IA marca consultas de madrugada sem falhar.",
         author: "Dra. Ana Silva",
-        role: "Clínica Sorriso",
+        role: "Diretora Clínica, Lisboa",
         initials: "AS"
     },
     {
-        quote: "O diagnóstico de processos foi um divisor de águas. Reduzimos custos operacionais em 30%.",
+        quote: "A SolveClin não nos vendeu software, desenhou um processo completo. Hoje a minha receção foca no paciente presencial, não no telemóvel.",
         author: "Dr. Ricardo Santos",
-        role: "Estética Avançada",
+        role: "Clínica de Estética",
         initials: "RS"
     },
     {
-        quote: "As Landing Pages da Solveclin convertem muito mais do que nosso site antigo. Excelente investimento.",
+        quote: "A clareza do Diagnóstico 360º assustou-nos de forma positiva. Percebemos que as campanhas geravam leads, mas o funil perdia 60% deles.",
         author: "Juliana Lima",
-        role: "Bem Estar Spa",
+        role: "Gestora, Bem Estar",
         initials: "JL"
     }
 ];
@@ -28,7 +28,7 @@ const testimonials = [
 const Testimonials = () => {
     return (
         <section className={styles.testimonials}>
-            <h2 className={styles.title}>O que dizem nossos parceiros</h2>
+            <h2 className={styles.title}>Resultados que superam expetativas</h2>
 
             <div className={styles.carousel}>
                 {testimonials.map((t, i) => (

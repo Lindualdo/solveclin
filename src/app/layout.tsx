@@ -18,8 +18,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Solveclin - Soluções Inteligentes para Clínicas",
-  description: "Otimização de processos, LPs, tráfego pago e atendimento para clínicas.",
+  title: "SolveClin | Engenharia de Processos e IA para Clínicas em Lisboa",
+  description: "Pare de perder pacientes para a concorrência. Especialistas em Portugal com 20 anos de experiência em automação de clínicas para zerar a cadeira vazia.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-PT">
       <body className={`${inter.variable} ${plusJakartaSans.variable}`}>
         <Navbar />
         {children}

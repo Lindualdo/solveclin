@@ -2,38 +2,38 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Activity, Webhook, MonitorCheck, Database, Layout, TrendingUp } from 'lucide-react';
+import { ClipboardList, Webhook, MonitorCheck, BarChart3, Layout, TrendingUp } from 'lucide-react';
 import styles from './Services.module.css';
 
 const services = [
     {
-        title: 'Diagnóstico 360º',
-        description: 'Auditoria completa de processos (Vendas, Gestão) para identificar e estancar vazamentos de lucro na clínica.',
-        icon: <Activity size={24} />
+        title: 'Fim da Burocracia',
+        description: 'Reduzimos processos complexos e confusos, organizando a casa para que tudo flua sem stress.',
+        icon: <ClipboardList size={24} />
     },
     {
-        title: 'Agentes de IA (Atendimento)',
-        description: 'Resposta imediata 24/7 via WhatsApp. Eliminamos o desperdício de leads com agendamento direto.',
-        icon: <Webhook size={24} />
-    },
-    {
-        title: 'Engenharia de Processos',
-        description: 'Automação de tarefas repetitivas de backoffice, liberando sua equipe humana para cuidar do paciente.',
+        title: 'Menos Trabalho Manual',
+        description: 'Eliminamos as tarefas repetitivas. A sua equipa fica livre para se focar no que importa: o paciente.',
         icon: <MonitorCheck size={24} />
     },
     {
-        title: 'Ecossistema CRM',
-        description: 'Implementação de CRM sincronizado aos canais de entrada, com dashboards de gestão em tempo real.',
-        icon: <Database size={24} />
+        title: 'Atendimento Humanizado 24/7',
+        description: 'Agentes de atendimento amigáveis que conhecem a sua clínica, falam a sua cultura e agendam consultas o dia todo.',
+        icon: <Webhook size={24} />
     },
     {
-        title: 'Presença Web Elite',
-        description: 'Desenvolvimento de Landing Pages de alta conversão para construir autoridade técnica.',
+        title: 'Gestão Inteligente',
+        description: 'Melhore a gestão da clínica com dados e dashboards muito eficientes e fáceis de visualizar.',
+        icon: <BarChart3 size={24} />
+    },
+    {
+        title: 'Estratégias de Venda',
+        description: 'Páginas exclusivas de alta conversão para os seus tratamentos e serviços principais.',
         icon: <Layout size={24} />
     },
     {
-        title: 'Máquina de Aquisição',
-        description: 'Gestão de tráfego focado em procedimentos de alto ticket e qualificação antecipada de pacientes.',
+        title: 'Campanhas de Marketing',
+        description: 'Profissionalizamos e melhoramos os seus canais de tráfego, automações e campanhas para trazer mais pacientes.',
         icon: <TrendingUp size={24} />
     }
 ];
@@ -48,7 +48,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    Não vendemos apenas tecnologia.
+                    O Nosso Foco no Diagnóstico 360º
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                    Vendemos a redução de custos, o fim da cadeira vazia e controle total da sua operação.
+                    O nosso objetivo é muito simples: resolver os problemas de processos diários da sua clínica médica, odontológica ou estética.
                 </motion.p>
             </div>
 
@@ -83,3 +83,4 @@ const Services = () => {
 };
 
 export default Services;
+

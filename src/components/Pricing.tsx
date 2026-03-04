@@ -10,46 +10,46 @@ const plans = [
         name: "Diagnóstico 360º",
         price: "297€",
         period: "único",
-        description: "Porta de entrada obrigatória para qualquer projeto. Descubra onde sua clínica perde dinheiro.",
+        description: "A porta de entrada. Um raio-x para descobrirmos onde investir o seu tempo e tirar a sua equipa do caos.",
         features: [
-            "Auditoria de Vendas",
-            "Auditoria de Gestão e Admin",
-            "Mapeamento de Gaps de Lucro",
-            "Desenho do Fluxo Otimizado",
-            "Plano de Modernização"
+            "Mapeamento de Processos Atuais",
+            "Identificação de Burocracias",
+            "Plano para Eliminar Trabalho Manual",
+            "Desenho da Máquina de Vendas",
+            "Custo dedutível num plano avançado"
         ],
         popular: false,
-        buttonText: "Agendar Diagnóstico"
+        buttonText: "Agendar o Diagnóstico 360º"
     },
     {
-        name: "Agentes de IA",
+        name: "Agente de Atendimento",
         price: "497€",
-        period: "a partir de",
-        description: "Mais 297€/mês de manutenção. Resposta imediata 24/7 e agendamento sem intervenção humana.",
+        period: "setup inicial",
+        description: "O Agente humanizado que não dorme, não tira férias e marca as suas consultas no WhatsApp.",
         features: [
-            "Tudo do Diagnóstico 360º",
-            "Motor de IA Chatvolt",
-            "Integração Google / Cal.com",
-            "Recuperação de Consultas (No-show)",
-            "Suporte Dedicado"
+            "Atendimento 24/7 com a Sua Cultura",
+            "Agendamento de Consultas Simplificado",
+            "Recuperação de Contatos Automática",
+            "Fim das Consultas Esquecidas",
+            "Manutenção Mensal: 297€"
         ],
         popular: true,
-        buttonText: "Implementar Agentes"
+        buttonText: "Quero Este Agente a Trabalhar Por Mim"
     },
     {
-        name: "Engenharia & Escala",
-        price: "Customizado",
+        name: "Solução Completa",
+        price: "Pacote",
         period: "sob consulta",
-        description: "Automatização completa e unificação do ecossistema de dados. Apenas para clínicas escaláveis.",
+        description: "Para clínicas que querem delegar toda a automação, dashboards de gestão e campanhas de marketing.",
         features: [
-            "Engenharia de Processos de Backoffice",
-            "Sincronização de CRM Hubspot/Pipedrive",
-            "Alertas de Fecho",
-            "Dashboards de Gestão de ROI",
-            "Consultoria Contínua"
+            "Todos os Processos Manuais Eliminados",
+            "Dashboards e Dados de Gestão",
+            "Estratégias de Marketing e Vendas",
+            "Páginas de Alta Conversão Incluídas",
+            "Integração Total (Burocracia Zero)"
         ],
         popular: false,
-        buttonText: "Falar com Consultor"
+        buttonText: "Falar Sobre a Solução Completa"
     }
 ];
 
@@ -63,7 +63,7 @@ export default function Pricing() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    Planos flexíveis para cada estágio
+                    Planos claros e sem burocracia
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ export default function Pricing() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                    Investimento claro, retornos previsíveis. Escolha como quer escalar sua clínica.
+                    Invista apenas na resolução dos problemas reais da sua clínica. Nós trazemos clareza ao seu negócio.
                 </motion.p>
             </div>
 
@@ -85,7 +85,7 @@ export default function Pricing() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: i * 0.1 }}
                     >
-                        {plan.popular && <div className={styles.popularBadge}>Mais Escolhido</div>}
+                        {plan.popular && <div className={styles.popularBadge}>O Mais Procurado</div>}
 
                         <div className={styles.cardHeader}>
                             <h3>{plan.name}</h3>

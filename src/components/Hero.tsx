@@ -14,7 +14,7 @@ const Hero = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                <div>Nova Era de Eficiência</div>
+                <div>Clínicas Odontológicas, Médicas, Estética e Bem-Estar</div>
             </motion.div>
 
             <motion.h1
@@ -23,7 +23,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
-                Pare de perder pacientes por demora no WhatsApp
+                Resolvemos os problemas de processos e o caos no atendimento da sua clínica.
             </motion.h1>
 
             <motion.p
@@ -32,7 +32,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             >
-                Escalamos a eficiência operacional da sua clínica com Agentes de IA 24/7. Reduza custos, recupere leads e acabe com a "cadeira vazia".
+                Reduza a burocracia e o trabalho manual. Implementamos Agentes humanizados 24/7 que falam a língua da sua empresa, criamos dashboards fáceis para a sua gestão e melhoramos as suas vendas com um marketing que funciona.
             </motion.p>
 
             <motion.div
@@ -42,12 +42,12 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
                 <button className={styles.primaryBtn}>
-                    Agendar Diagnóstico 360º
+                    Agendar Meu Diagnóstico 360º
                     <ArrowRight size={18} />
                 </button>
                 <button className={styles.secondaryBtn}>
                     <Play size={18} fill="currentColor" />
-                    Ver Soluções
+                    Como Resolvemos o Seu Problema
                 </button>
             </motion.div>
         </section>
