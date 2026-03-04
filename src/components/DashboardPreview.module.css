@@ -1,0 +1,198 @@
+.container {
+    max-width: 1200px;
+    margin: -20px auto 100px;
+    padding: 0 20px;
+    font-family: Inter, sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+    .cardsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.label {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.iconContainer {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F0FF;
+    color: #7C5CFC;
+}
+
+.bgPurple {
+    color: #8B5CF6;
+}
+
+.bgIndigo {
+    color: #6366F1;
+}
+
+.bgBlue {
+    color: #3B82F6;
+}
+
+.value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 12px;
+}
+
+.statusUp,
+.statusDown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.statusUp {
+    color: #10B981;
+}
+
+.statusDown {
+    color: #EF4444;
+}
+
+.statusUp span,
+.statusDown span {
+    color: #888888;
+    font-weight: 400;
+}
+
+.chartContainer {
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+}
+
+.chartInnerGlass {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    padding: 32px;
+    width: 100%;
+}
+
+.chartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.chartHeader h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #121212;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #F8FAFC;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    cursor: pointer;
+}
+
+.chartBody {
+    display: flex;
+    height: 300px;
+}
+
+.yAxis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 24px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.chartVisual {
+    flex: 1;
+    position: relative;
+    border-bottom: 1px dashed #E2E8F0;
+}
+
+.xAxis {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-top: 16px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.tooltip {
+    position: absolute;
+    background: #7C5CFC;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    transform: translate(-50%, -100%);
+    margin-top: -12px;
+    box-shadow: 0 4px 12px rgba(124, 92, 252, 0.4);
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: #7C5CFC transparent transparent transparent;
+}

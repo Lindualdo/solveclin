@@ -1,0 +1,162 @@
+.pricing {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--primary);
+    letter-spacing: -0.03em;
+}
+
+.header p {
+    font-size: 1.125rem;
+    color: var(--secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: center;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular {
+    transform: scale(1.05);
+    border: 2px solid var(--primary);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    z-index: 2;
+}
+
+.popularBadge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cardHeader h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--foreground);
+}
+
+.cardHeader p {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    min-height: 60px;
+}
+
+.priceContainer {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--foreground);
+    letter-spacing: -0.02em;
+}
+
+.period {
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 32px;
+    transition: all 0.2s ease;
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.button:hover {
+    background: #e2e8f0;
+}
+
+.buttonPopular {
+    background: var(--primary);
+    color: white;
+}
+
+.buttonPopular:hover {
+    background: var(--primary-hover);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--secondary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.checkIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .popular {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
