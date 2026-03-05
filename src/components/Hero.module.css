@@ -24,7 +24,7 @@
 }
 
 .hero {
-  padding: var(--sp-16) var(--sp-6) var(--sp-6);
+  padding: var(--sp-16) var(--sp-6) var(--sp-12);
   display: flex;
   flex-direction: column;
   align-items: center;
