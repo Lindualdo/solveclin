@@ -1,25 +1,27 @@
 import type { Metadata } from "next";
-import { Inter, Bricolage_Grotesque } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
-  variable: "--font-inter",
-  display: 'swap',
+  variable: "--font-body",
+  display: "swap",
 });
 
-const bricolage = Bricolage_Grotesque({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
   variable: "--font-display",
-  display: 'swap',
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "SolveClin | Engenharia de Processos e IA para Clínicas em Lisboa",
-  description: "Pare de perder pacientes para a concorrência. Especialistas em Portugal com 20 anos de experiência em automação de clínicas para zerar a cadeira vazia.",
+  description:
+    "Pare de perder pacientes para a concorrência. Especialistas em Portugal com 20 anos de experiência em automação de clínicas para zerar a cadeira vazia.",
 };
 
 export default function RootLayout({
@@ -29,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-PT">
-      <body className={`${inter.variable} ${bricolage.variable}`}>
+      <body className={`${manrope.variable} ${fraunces.variable}`}>
         <Navbar />
         {children}
       </body>

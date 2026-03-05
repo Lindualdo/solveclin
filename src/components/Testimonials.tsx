@@ -40,7 +40,7 @@ const Testimonials = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: i * 0.2 }}
                     >
-                        <p className={styles.quote}>"{t.quote}"</p>
+                        <p className={styles.quote}>&quot;{t.quote}&quot;</p>
                         <div className={styles.author}>
                             <div className={styles.avatar}>{t.initials}</div>
                             <div className={styles.info}>

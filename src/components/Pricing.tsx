@@ -85,22 +85,26 @@ export default function Pricing() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: i * 0.1 }}
                     >
-                        {plan.popular && <div className={styles.popularBadge}>O Mais Procurado</div>}
-
                         <div className={styles.cardHeader}>
                             <h3>{plan.name}</h3>
-                            <p>{plan.description}</p>
+                            {plan.popular && (
+                                <div className={styles.popularBadge}>
+                                    <span style={{ fontSize: '14px' }}>🔥</span> Popular
+                                </div>
+                            )}
                         </div>
+                        <p className={styles.cardDesc}>{plan.description}</p>
 
                         <div className={styles.priceContainer}>
                             <span className={styles.price}>{plan.price}</span>
                             <span className={styles.period}>/ {plan.period}</span>
                         </div>
 
-                        <button className={`${styles.button} ${plan.popular ? styles.buttonPopular : ''}`}>
+                        <button className={styles.button}>
                             {plan.buttonText}
                         </button>
 
+                        <div className={styles.featuresLabel}>Inclui:</div>
                         <div className={styles.features}>
                             {plan.features.map((feature, j) => (
                                 <div key={j} className={styles.feature}>

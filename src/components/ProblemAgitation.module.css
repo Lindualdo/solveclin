@@ -1,125 +1,141 @@
 .problemSection {
-    padding: 8rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: var(--sp-20) 5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 5rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--sp-12);
 }
 
 .label {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--secondary);
-    background: rgba(15, 23, 42, 0.04);
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    padding: 6px 14px;
-    border-radius: 99px;
-    margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-3);
+}
+
+.label::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 
 .header h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: 1.5rem;
-    color: var(--primary);
-    text-wrap: balance;
+  font-size: var(--text-2xl);
+  margin-bottom: var(--sp-3);
+  color: var(--text-primary);
+  text-wrap: balance;
 }
 
 .header p {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--secondary);
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--text-secondary);
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--sp-4);
 }
 
 .card {
-    padding: 2.75rem 2.5rem;
-    border-radius: 20px;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: var(--sp-6) var(--sp-4);
+  border-radius: var(--radius-lg);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+  background: var(--bg);
+  border-color: var(--border-hover);
 }
 
 .number {
-    display: block;
-    font-family: var(--font-jakarta);
-    font-size: 4rem;
-    font-weight: 800;
-    color: rgba(15, 23, 42, 0.05);
-    position: absolute;
-    top: -10px;
-    right: 20px;
-    line-height: 1;
+  display: block;
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  color: var(--surface-2);
+  user-select: none;
+  z-index: 0;
+  opacity: 0.6;
 }
 
 .card h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.875rem;
-    color: var(--primary);
-    position: relative;
-    z-index: 1;
+  font-size: var(--text-xl);
+  margin-bottom: var(--sp-2);
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
 }
 
 .card p {
-    color: var(--secondary);
-    line-height: 1.65;
-    font-size: 0.95rem;
-    position: relative;
-    z-index: 1;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  font-size: var(--text-base);
+  position: relative;
+  z-index: 1;
 }
 
 .callout {
-    margin-top: 4rem;
-    padding: 2rem 2.5rem;
-    border-left: 3px solid var(--primary);
-    background: rgba(15, 23, 42, 0.03);
-    border-radius: 0 12px 12px 0;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: var(--sp-12);
+  padding: var(--sp-4) var(--sp-6);
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .callout p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--secondary);
-    font-style: italic;
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-style: italic;
+  font-family: var(--font-display);
 }
 
 .callout em {
-    font-style: normal;
-    font-weight: 600;
-    color: var(--primary);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 @media (max-width: 768px) {
-    .problemSection {
-        padding: 5rem 5%;
-    }
+  .problemSection {
+    padding: var(--sp-12) 5%;
+  }
 
-    .card {
-        padding: 2.25rem 1.75rem;
-    }
+  .card {
+    padding: var(--sp-4);
+  }
 
-    .callout {
-        margin-top: 2.5rem;
-        padding: 1.5rem 1.75rem;
-    }
+  .callout {
+    margin-top: var(--sp-8);
+    padding: var(--sp-3) var(--sp-4);
+  }
 }
