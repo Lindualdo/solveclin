@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const manrope = Manrope({
+const jakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   variable: "--font-body",
   display: "swap",
 });
 
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   style: ["normal", "italic"],
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-PT">
-      <body className={`${manrope.variable} ${fraunces.variable}`}>
+      <body className={`${jakartaSans.variable} ${playfair.variable}`}>
         <Navbar />
         {children}
       </body>
