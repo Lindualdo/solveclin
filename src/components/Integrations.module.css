@@ -1,124 +1,268 @@
-.integrations {
-    padding: 120px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* ═══════════════════════════════════════════════════════════════
+   Integrations — "O seu paciente não espera"
+   Dark → Light transition with automation flow + glassmorphism
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Wrapper ─────────────────────────────────────────────────── */
+.wrapper {
     position: relative;
+    overflow: hidden;
+    background: #f8f7f4;
+    padding: 0 5% 120px;
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.header h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: var(--foreground);
-    letter-spacing: -0.03em;
-}
-
-.header p {
-    font-size: 1.125rem;
-    color: var(--secondary);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.mapContainer {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    background: radial-gradient(circle at center, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
-    border-radius: 40px;
-    padding: 60px 20px;
-}
-
-.lines {
+/* ── Gradient bridge from the dark (#172f25) section above ───── */
+.topFade {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, #172f25 0%, #1e3d2e 18%, #2a5040 35%, transparent 100%);
     pointer-events: none;
+    z-index: 0;
 }
 
-.columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ── Decorative blobs ─────────────────────────────────────────── */
+.blob1 {
+    position: absolute;
+    top: 150px;
+    left: -200px;
+    width: 560px;
+    height: 560px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    animation: blobDrift1 12s ease-in-out infinite alternate;
+}
+
+.blob2 {
+    position: absolute;
+    bottom: 80px;
+    right: -160px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    animation: blobDrift2 14s ease-in-out infinite alternate;
+}
+
+@keyframes blobDrift1 {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(40px, 30px) scale(1.08);
+    }
+}
+
+@keyframes blobDrift2 {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(-30px, -40px) scale(1.06);
+    }
+}
+
+/* ── Inner container ──────────────────────────────────────────── */
+.inner {
+    max-width: 1160px;
+    margin: 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 1;
+    /* push content below the topFade gradient bridge */
+    padding-top: 180px;
 }
 
-.columnEdge {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+/* ── Section label ────────────────────────────────────────────── */
+.label {
+    display: inline-flex;
     align-items: center;
+    gap: 10px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #10b981;
+    margin-bottom: 1.2rem;
 }
 
-.columnCenter {
-    display: flex;
+.label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background: #10b981;
+    border-radius: 2px;
+}
+
+/* ── Header ───────────────────────────────────────────────────── */
+.header {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* ── Title — serif + gradient ─────────────────────────────────── */
+.title {
+    /* Use the serif display variable set by the project, fallback to Georgia */
+    font-family: var(--font-display, 'Georgia', serif);
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    color: #0d1f1a;
+    margin-bottom: 1.25rem;
+}
+
+/* Gradient highlight on "não espera." */
+.gradient {
+    background: linear-gradient(135deg, #059669 0%, #10b981 45%, #34d399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Subtitle ─────────────────────────────────────────────────── */
+.subtitle {
+    font-size: 1.1rem;
+    color: #4b6358;
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+
+/* ── Automation flow SVG wrapper ──────────────────────────────── */
+.flowWrap {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto 80px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(16, 185, 129, 0.12);
+    border-radius: 28px;
+    padding: 32px 24px 24px;
+    box-shadow:
+        0 4px 24px rgba(16, 185, 129, 0.06),
+        0 1px 4px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.flowSvg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+}
+
+/* ── Cards grid ───────────────────────────────────────────────── */
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ── Glassmorphism card ───────────────────────────────────────── */
+.card {
+    padding: 32px 28px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    box-shadow:
+        0 8px 32px rgba(16, 185, 129, 0.07),
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition:
+        transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow:
+        0 16px 48px rgba(16, 185, 129, 0.13),
+        0 4px 16px rgba(0, 0, 0, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* ── Card icon — metallic emerald ─────────────────────────────── */
+.iconWrap {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    /* Metallic emerald gradient */
+    background: linear-gradient(145deg, #059669 0%, #0d9488 50%, #065f46 100%);
+    color: #fff;
+    box-shadow:
+        0 4px 16px rgba(16, 185, 129, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-.appCard {
-    width: 72px;
-    height: 72px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transform-origin: center;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+/* ── Card text ────────────────────────────────────────────────── */
+.card h3 {
+    font-family: var(--font-display, 'Georgia', serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0d1f1a;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    margin-bottom: 10px;
 }
 
-.appCard:hover {
-    transform: scale(1.1) translateY(-5px) !important;
-    box-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
+.card p {
+    font-size: 0.95rem;
+    color: #4b6358;
+    line-height: 1.7;
 }
 
-.centerNode {
-    width: 96px;
-    height: 96px;
-    background: #0f172a;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2), inset 0 0 0 4px rgba(255, 255, 255, 0.1);
-    animation: pulse 4s infinite alternate;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2), inset 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 0 rgba(124, 58, 237, 0.2);
-    }
-
-    100% {
-        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.3), inset 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(124, 58, 237, 0);
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 900px) {
+    .cardsGrid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 768px) {
-    .columnEdge {
-        gap: 40px;
+@media (max-width: 640px) {
+    .wrapper {
+        padding: 0 5% 80px;
     }
 
-    .appCard {
-        width: 60px;
-        height: 60px;
+    .inner {
+        padding-top: 120px;
     }
 
-    .centerNode {
-        width: 80px;
-        height: 80px;
+    .topFade {
+        height: 140px;
+    }
+
+    .cardsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: clamp(1.9rem, 7vw, 2.6rem);
+    }
+
+    .flowWrap {
+        padding: 20px 12px 16px;
+        border-radius: 18px;
+    }
+
+    .card {
+        padding: 24px 20px;
     }
 }
