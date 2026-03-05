@@ -23,6 +23,16 @@ Quando a oferta envolve transformação pessoal ou serviço de confiança, use a
 
 ---
 
+## Princípios de Escrita (Writing Rules)
+
+1. **Voz do Cliente** — usar as palavras exactas que o cliente usa em reviews e conversas, não palavras de marketeer. Falar *para* o cliente, não *sobre* o produto.
+2. **Sem pontos de exclamação** — a força do copy cria urgência, não a pontuação.
+3. **Uma ideia por secção** — não combinar benefícios não relacionados. Diluição = perda de impacto.
+4. **Simples > Complexo** — "Use" não "utilize". "Ajudar" não "facilitar". Voz activa sempre.
+5. **Especificidade > Vaguidade** — ❌ "Poupe tempo" → ✅ "Reduza 4 horas semanais de tarefas administrativas"
+
+---
+
 ## Section-by-Section Copy Guide
 
 ### 1. NAV
