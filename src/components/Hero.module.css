@@ -15,12 +15,17 @@
   z-index: 0;
 }
 
-/* White overlay for legibility — light clinic image needs just a touch */
+/* White overlay + smooth fade into dark petrol section at the bottom */
 .heroBg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(247, 245, 242, 0.72);
+  background:
+    linear-gradient(to bottom,
+      rgba(247, 245, 242, 0.72) 0%,
+      rgba(247, 245, 242, 0.72) 60%,
+      rgba(23, 47, 37, 0.5) 85%,
+      #172f25 100%);
 }
 
 .hero {
