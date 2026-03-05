@@ -14,7 +14,7 @@ const Hero = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                <div>Clínicas Odontológicas, Médicas, Estética e Bem-Estar</div>
+                <div>Soluções para clínicas odontológicas, médicas e bem-estar</div>
             </motion.div>
 
             <motion.h1
@@ -23,7 +23,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
-                Resolvemos os problemas de processos e o caos no atendimento da sua clínica.
+                Reduza até 30% do custo operacional e aumente 40% nas vendas.
             </motion.h1>
 
             <motion.p
@@ -32,7 +32,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             >
-                Reduza a burocracia e o trabalho manual. Implementamos Agentes humanizados 24/7 que falam a língua da sua empresa, criamos dashboards fáceis para a sua gestão e melhoramos as suas vendas com um marketing que funciona.
+                Tecnologia e automação sem um processo eficiente é jogar dinheiro fora. Primeiro otimizamos a sua operação, depois automatizamos com eficiência.
             </motion.p>
 
             <motion.div

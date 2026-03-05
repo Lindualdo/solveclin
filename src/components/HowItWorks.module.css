@@ -1,0 +1,82 @@
+.howItWorks {
+    padding: 8rem 5%;
+    background-color: var(--primary);
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: white;
+    line-height: 1.1;
+}
+
+.header p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.stepsList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.stepItem {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.stepNum {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-jakarta);
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.stepText h3 {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.stepText p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .content {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .howItWorks {
+        padding: 5rem 5%;
+    }
+}
