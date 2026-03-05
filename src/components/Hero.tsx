@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, Star } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -21,7 +21,7 @@ const Hero = () => {
                 className={styles.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             >
                 Reduza até 30% do custo operacional e aumente 40% nas vendas.
             </motion.h1>
@@ -30,7 +30,7 @@ const Hero = () => {
                 className={styles.subtitle}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             >
                 Tecnologia e automação sem um processo eficiente é jogar dinheiro fora. Primeiro otimizamos a sua operação, depois automatizamos com eficiência.
             </motion.p>
@@ -39,16 +39,33 @@ const Hero = () => {
                 className={styles.actions}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-                <button className={styles.primaryBtn}>
-                    Agendar Meu Diagnóstico 360º
-                    <ArrowRight size={18} />
-                </button>
-                <button className={styles.secondaryBtn}>
+                <div className={styles.primaryGroup}>
+                    <button className={styles.primaryBtn} aria-label="Agendar Diagnóstico 360º">
+                        Agendar Meu Diagnóstico 360º
+                        <ArrowRight size={18} />
+                    </button>
+                    <span className={styles.microcopy}>Sem compromisso · Resposta em 24h</span>
+                </div>
+                <button className={styles.secondaryBtn} aria-label="Ver como resolvemos o seu problema">
                     <Play size={18} fill="currentColor" />
                     Como Resolvemos o Seu Problema
                 </button>
+            </motion.div>
+
+            <motion.div
+                className={styles.socialProof}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            >
+                <div className={styles.stars} aria-label="Avaliação 5 estrelas">
+                    {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={14} fill="currentColor" />
+                    ))}
+                </div>
+                <span>Mais de 40 clínicas já otimizaram a sua operação</span>
             </motion.div>
         </section>
     );

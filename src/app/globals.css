@@ -12,6 +12,7 @@
   --glass-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.05);
   --font-inter: var(--font-inter), sans-serif;
   --font-jakarta: var(--font-jakarta), sans-serif;
+  --font-display: var(--font-display), sans-serif;
 }
 
 h1,
@@ -20,9 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-family: var(--font-display), "Bricolage Grotesque", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   line-height: 1.1;
   color: #0f172a;
 }

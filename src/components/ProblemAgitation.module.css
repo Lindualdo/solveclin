@@ -10,10 +10,25 @@
     margin: 0 auto 5rem;
 }
 
+.label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    background: rgba(15, 23, 42, 0.04);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 6px 14px;
+    border-radius: 99px;
+    margin-bottom: 1.5rem;
+}
+
 .header h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 1.5rem;
     color: var(--primary);
+    text-wrap: balance;
 }
 
 .header p {
@@ -25,15 +40,21 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .card {
-    padding: 3rem 2.5rem;
+    padding: 2.75rem 2.5rem;
     border-radius: 20px;
     text-align: left;
     position: relative;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 .number {
@@ -42,7 +63,6 @@
     font-size: 4rem;
     font-weight: 800;
     color: rgba(15, 23, 42, 0.05);
-    /* very subtle watermark effect */
     position: absolute;
     top: -10px;
     right: 20px;
@@ -50,8 +70,8 @@
 }
 
 .card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.875rem;
     color: var(--primary);
     position: relative;
     z-index: 1;
@@ -59,10 +79,34 @@
 
 .card p {
     color: var(--secondary);
-    line-height: 1.6;
-    font-size: 1rem;
+    line-height: 1.65;
+    font-size: 0.95rem;
     position: relative;
     z-index: 1;
+}
+
+.callout {
+    margin-top: 4rem;
+    padding: 2rem 2.5rem;
+    border-left: 3px solid var(--primary);
+    background: rgba(15, 23, 42, 0.03);
+    border-radius: 0 12px 12px 0;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.callout p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    font-style: italic;
+}
+
+.callout em {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -71,6 +115,11 @@
     }
 
     .card {
-        padding: 2.5rem 2rem;
+        padding: 2.25rem 1.75rem;
+    }
+
+    .callout {
+        margin-top: 2.5rem;
+        padding: 1.5rem 1.75rem;
     }
 }
