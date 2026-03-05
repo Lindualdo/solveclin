@@ -1,13 +1,28 @@
+/* ============================================================================
+   Problem Agitation — Dark "Trevas" Section
+   Full-bleed dark petrol green background, light-on-dark text
+   ============================================================================ */
+
 .problemSection {
-  padding: var(--sp-20) 5%;
+  background: #172f25;
+  /* Petrol dark green — "trevas" before the light */
+  background-image:
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(45, 106, 79, 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 30% at 10% 20%, rgba(45, 106, 79, 0.12) 0%, transparent 60%);
+  padding: var(--sp-8) 5% var(--sp-16);
+  width: 100%;
+}
+
+.inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* -------------------------------- Header ---------------------------------- */
 .header {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto var(--sp-12);
+  max-width: 760px;
+  margin: 0 auto var(--sp-8);
 }
 
 .label {
@@ -18,45 +33,51 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: var(--sp-3);
+  color: rgba(92, 138, 110, 1);
+  /* --accent-2 on dark bg */
+  margin-bottom: var(--sp-2);
 }
 
 .label::before {
   content: "";
   width: 18px;
   height: 1px;
-  background: var(--accent);
+  background: rgba(92, 138, 110, 0.8);
   flex-shrink: 0;
 }
 
 .header h2 {
   font-size: var(--text-2xl);
-  margin-bottom: var(--sp-3);
-  color: var(--text-primary);
+  margin-bottom: var(--sp-2);
+  color: #f0edea;
+  /* --text-dark-primary */
   text-wrap: balance;
+  line-height: 1.2;
 }
 
 .header p {
   font-size: var(--text-lg);
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: rgba(240, 237, 234, 0.6);
+  /* --text-dark-primary at 60% */
 }
 
+/* --------------------------------- Grid ----------------------------------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--sp-4);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
 }
 
+/* --------------------------------- Card ----------------------------------- */
 .card {
-  padding: var(--sp-6) var(--sp-4);
+  padding: var(--sp-4);
   border-radius: var(--radius-lg);
   text-align: left;
   position: relative;
   overflow: hidden;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   transition:
     transform 0.3s ease,
     background 0.3s ease,
@@ -65,46 +86,69 @@
 
 .card:hover {
   transform: translateY(-4px);
-  background: var(--bg);
-  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(92, 138, 110, 0.3);
 }
 
+/* Number watermark — top right, low opacity */
 .number {
   display: block;
   font-family: var(--font-display);
-  font-size: 5rem;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 700;
   line-height: 1;
   position: absolute;
-  top: -15px;
-  right: 15px;
-  color: var(--surface-2);
+  top: -10px;
+  right: 12px;
+  color: rgba(255, 255, 255, 0.06);
   user-select: none;
   z-index: 0;
-  opacity: 0.6;
+  letter-spacing: -0.05em;
 }
 
-.card h3 {
-  font-size: var(--text-xl);
+/* Icon */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(45, 106, 79, 0.2);
+  color: rgba(92, 138, 110, 1);
+  border: 1px solid rgba(92, 138, 110, 0.2);
   margin-bottom: var(--sp-2);
-  color: var(--text-primary);
   position: relative;
   z-index: 1;
 }
 
+/* Card title — Serif for authority */
+.card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--sp-1);
+  color: #f0edea;
+  position: relative;
+  z-index: 1;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
 .card p {
-  color: var(--text-secondary);
+  color: rgba(240, 237, 234, 0.55);
   line-height: 1.65;
   font-size: var(--text-base);
   position: relative;
   z-index: 1;
 }
 
+/* ------------------------------ Callout ----------------------------------- */
 .callout {
-  margin-top: var(--sp-12);
+  margin-top: var(--sp-8);
   padding: var(--sp-4) var(--sp-6);
-  border-left: 3px solid var(--accent);
-  background: var(--accent-soft);
+  border-left: 3px solid rgba(92, 138, 110, 0.6);
+  background: rgba(45, 106, 79, 0.12);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   max-width: 720px;
   margin-left: auto;
@@ -114,28 +158,38 @@
 .callout p {
   font-size: var(--text-lg);
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: rgba(240, 237, 234, 0.7);
   font-style: italic;
   font-family: var(--font-display);
 }
 
 .callout em {
   font-style: normal;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 700;
+  color: #f0edea;
 }
 
-@media (max-width: 768px) {
+/* --------------------------- Responsive ----------------------------------- */
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
   .problemSection {
     padding: var(--sp-12) 5%;
   }
 
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
   .card {
-    padding: var(--sp-4);
+    padding: var(--sp-3);
   }
 
   .callout {
-    margin-top: var(--sp-8);
     padding: var(--sp-3) var(--sp-4);
   }
 }
