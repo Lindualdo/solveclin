@@ -7,49 +7,49 @@ import styles from './Pricing.module.css';
 
 const plans = [
     {
-        name: "Diagnóstico 360º",
-        price: "297€",
+        name: "Diagnóstico Estratégico 360º",
+        price: "397€",
         period: "único",
-        description: "A porta de entrada. Um raio-x para descobrirmos onde investir o seu tempo e tirar a sua equipa do caos.",
+        description: "A porta de entrada. Um diagnóstico prático para medir furos na sua operação e desenhar o fluxo de ganho eficiente.",
         features: [
-            "Mapeamento de Processos Atuais",
-            "Identificação de Burocracias",
-            "Plano para Eliminar Trabalho Manual",
-            "Desenho da Máquina de Vendas",
-            "Custo dedutível num plano avançado"
+            "Mapeamento de Processos Ativos",
+            "Identificação de Atritos Burocráticos",
+            "Relatório de Lucro Oculto",
+            "Plano de Ação para Automação",
+            "Custo dedutível em planos avançados"
         ],
         popular: false,
         buttonText: "Agendar o Diagnóstico 360º"
     },
     {
-        name: "Agente de Atendimento",
+        name: "Agente de Atendimento IA",
         price: "497€",
         period: "setup inicial",
-        description: "O Agente humanizado que não dorme, não tira férias e marca as suas consultas no WhatsApp.",
+        description: "Recuperação imediata de faturação. O seu agente qualifica e agenda com empatia humana, garantindo 24/7.",
         features: [
-            "Atendimento 24/7 com a Sua Cultura",
+            "Atendimento 24/7 com a Sua Identidade",
             "Agendamento de Consultas Simplificado",
-            "Recuperação de Contatos Automática",
-            "Fim das Consultas Esquecidas",
+            "Qualificação Automática de Leads",
+            "Follow-ups e Lembretes",
             "Manutenção Mensal: 297€"
         ],
         popular: true,
         buttonText: "Quero Este Agente a Trabalhar Por Mim"
     },
     {
-        name: "Solução Completa",
-        price: "Pacote",
-        period: "sob consulta",
-        description: "Para clínicas que querem delegar toda a automação, dashboards de gestão e campanhas de marketing.",
+        name: "Engenharia Operacional",
+        price: "Projeto",
+        period: "sob orçamento",
+        description: "Para clínicas que procuram domínio de mercado com automação de backoffice e previsibilidade total ponta a ponta.",
         features: [
-            "Todos os Processos Manuais Eliminados",
-            "Dashboards e Dados de Gestão",
-            "Estratégias de Marketing e Vendas",
-            "Páginas de Alta Conversão Incluídas",
-            "Integração Total (Burocracia Zero)"
+            "Dashboards em Tempo Real",
+            "Fim de Todos os Trabalhos Manuais",
+            "Campanhas de Marketing Orientadas a LTV",
+            "Landing Pages de Alta Conversão",
+            "Plano Executivo com KPI's de Escala"
         ],
         popular: false,
-        buttonText: "Falar Sobre a Solução Completa"
+        buttonText: "Falar Sobre a Engenharia Operacional"
     }
 ];
 
@@ -63,7 +63,7 @@ export default function Pricing() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    Planos claros e sem burocracia
+                    Clareza em todos os investimentos
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ export default function Pricing() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                    Invista apenas na resolução dos problemas reais da sua clínica. Nós trazemos clareza ao seu negócio.
+                    Sem custos ocultos ou planos desnecessários. Resolva os problemas da sua clínica num formato justo de eficiência.
                 </motion.p>
             </div>
 

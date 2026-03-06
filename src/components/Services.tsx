@@ -7,33 +7,33 @@ import styles from './Services.module.css';
 
 const services = [
     {
-        title: 'Fim da Burocracia',
-        description: 'Reduzimos processos complexos e confusos, organizando a casa para que tudo flua sem stress.',
+        title: 'Foco no Atendimento Humano',
+        description: 'Libertamos a sua equipa das tarefas mecânicas. Menos ecrãs para olhar e mais pacientes para acolher com atenção total.',
         icon: <ClipboardList size={24} />
     },
     {
-        title: 'Menos Trabalho Manual',
-        description: 'Eliminamos as tarefas repetitivas. A sua equipa fica livre para se focar no que importa: o paciente.',
+        title: 'Automação Silenciosa',
+        description: 'Os processos repetitivos correm de forma invísivel e contínua num background, acabando com a carga da burocracia digital.',
         icon: <MonitorCheck size={24} />
     },
     {
-        title: 'Atendimento Humanizado 24/7',
-        description: 'Agentes de atendimento amigáveis que conhecem a sua clínica, falam a sua cultura e agendam consultas o dia todo.',
+        title: 'Receção IA 24/7',
+        description: 'Agentes inteligentes que entendem o tom da clínica, fazem a triagem clínica diária de forma cordial e eficiente.',
         icon: <Webhook size={24} />
     },
     {
-        title: 'Gestão Inteligente',
-        description: 'Melhore a gestão da clínica com dados e dashboards muito eficientes e fáceis de visualizar.',
+        title: 'Gestão Baseada em Dados Realistas',
+        description: 'Fim do achismo. Obtenha a margem real dos tratamentos em tempo real usando dashboards altamente dinâmicos.',
         icon: <BarChart3 size={24} />
     },
     {
-        title: 'Estratégias de Venda',
-        description: 'Páginas exclusivas de alta conversão para os seus tratamentos e serviços principais.',
+        title: 'Conversão Eficiente',
+        description: 'Apoiamos campanhas com landing pages focadas na jornada dos pacientes, gerando oportunidades seguras de venda.',
         icon: <Layout size={24} />
     },
     {
-        title: 'Campanhas de Marketing',
-        description: 'Profissionalizamos e melhoramos os seus canais de tráfego, automações e campanhas para trazer mais pacientes.',
+        title: 'Tração Estratégica',
+        description: 'Os seus canais convertem de forma inteligente porque otimizamos tudo antes mesmo do tráfego começar a crescer.',
         icon: <TrendingUp size={24} />
     }
 ];
@@ -48,7 +48,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    O Nosso Foco no Diagnóstico 360º
+                    A Arquitetura da Eficiência
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ const Services = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.1 }}
                 >
-                    O nosso objetivo é muito simples: resolver os problemas de processos diários da sua clínica médica, odontológica ou estética.
+                    Reduzimos o ruído para que a verdadeira rentabilidade apareça. Desenhamos a estrutura em que pacientes, dados e equipas funcionem em perfeita harmonia.
                 </motion.p>
             </div>
 

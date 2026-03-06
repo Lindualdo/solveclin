@@ -7,8 +7,8 @@ import styles from './HowItWorks.module.css';
 const steps = [
     {
         num: "1",
-        title: "Diagnóstico e Planeamento",
-        desc: "Mergulhamos na operação da sua clínica para diagnosticar onde se perde tempo e desenhamos fluxos para eliminar a burocracia.",
+        title: "Diagnóstico e Reestruturação",
+        description: "Mapeamos ao detalhe os processos atuais da sua operação. Identificamos exatemente onde a sua margem de lucro diminui e ajudamos a reduzir atritos operacionais.",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="18" cy="5" r="3"></circle>
@@ -21,8 +21,8 @@ const steps = [
     },
     {
         num: "2",
-        title: "Implementação Segura",
-        desc: "Com a casa arrumada, implementamos automações e Agentes para fazerem o trabalho repetitivo por si. Integramos sistemas no background.",
+        title: "Integração Otimizada",
+        description: "Com a casa organizada, orquestramos a sua área digital. Retiramos os dados espalhados e passamos tudo para workflows que correm em contexto estruturado e invisível.",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
@@ -34,8 +34,8 @@ const steps = [
     },
     {
         num: "3",
-        title: "Suporte Contínuo",
-        desc: "Com processos eficientes a rodarem no automático, aplicamos melhorias constantes para escalar os resultados e faturar de forma previsível.",
+        title: "Inteligência IA e Escala",
+        description: "Implementamos IA para assumir o tempo repetitivo, de modo que consiga ganhar com processos altamente performantes os que se revertem num painel prático para análise de margem de lucro e eficiência diária.",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
@@ -56,7 +56,7 @@ const HowItWorks = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2>O Processo é Performance</h2>
+                    <h2>Protocolo R.O.I: Engenharia Operacional</h2>
                 </motion.div>
 
                 <div className={styles.grid}>
@@ -74,7 +74,7 @@ const HowItWorks = () => {
                                 <div className={styles.stepNum}>{step.num}</div>
                             </div>
                             <h3>{step.title}</h3>
-                            <p>{step.desc}</p>
+                            <p>{step.description}</p>
                             <div className={styles.stepBadge}>Step {step.num}</div>
                         </motion.div>
                     ))}

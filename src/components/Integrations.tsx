@@ -266,15 +266,15 @@ export default function Integrations() {
                     viewport={{ once: true, margin: '-80px' }}
                     transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 >
-                    <span className={styles.label}>Automação Inteligente</span>
+                    <span className={styles.label}>Arquitetura de Conversão</span>
                     <h2 className={styles.title}>
                         O seu paciente{' '}
                         <span className={styles.gradient}>não espera.</span>
-                        <br />Nós também não.
+                        <br />Mude a velocidade da sua clínica.
                     </h2>
                     <p className={styles.subtitle}>
-                        Integramos todos os seus canais numa única máquina de marcação.
-                        Feche orçamentos pelo WhatsApp e centralize tudo no seu CRM — sem esforço manual.
+                        Conectamos a captação de contactos à sua agenda através de fluxos invisíveis.
+                        Qualifique no WhatsApp e centralize tudo no CRM — sem qualquer esforço manual.
                     </p>
                 </motion.div>
 

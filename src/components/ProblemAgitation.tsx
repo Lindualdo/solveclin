@@ -17,44 +17,44 @@ const problems = [
   {
     number: "01",
     icon: Calendar,
-    title: "A Cadeira Vazia que Pagou Cara",
+    title: "O Custo Oculto da Espera",
     description:
-      "Investiu em anúncios, o paciente enviou mensagem às 21h — e a receção respondeu na manhã seguinte. Ele já tinha marcado na clínica ao lado. Cada lead ignorado custa entre €150 a €400 em receita perdida.",
+      "O seu paciente confia em si, mas enviou uma mensagem às 21h. A sua receção respondeu na manhã seguinte, quando ele já tinha marcação na concorrência. A lentidão burocrática custa centenas de euros por dia.",
   },
   {
     number: "02",
     icon: Users,
-    title: "A Rececionista a Fazer Tudo Menos Receber",
+    title: "Uma Excelente Equipa Focada no Sítio Errado",
     description:
-      "Confirmações de consulta, lembretes de retorno, follow-ups de orçamentos, folhas de cálculo. A sua equipa passa 3 a 4 horas por dia em tarefas que nenhum sistema faz por ela — e o paciente que chega à porta espera sem atenção.",
+      "Confirmações, reagendamentos, e folhas de Excel intermináveis. A sua equipa passa 4 horas por dia em processos administrativos invisíveis — enquanto o paciente que está na sala de espera aguarda por atenção plena.",
   },
   {
     number: "03",
     icon: BarChart2,
-    title: "Fim do Mês Sem Saber o Que Aconteceu",
+    title: "Gestão Desligada da Operação Real",
     description:
-      "Qual tratamento teve margem real? Qual campanha trouxe pacientes que pagaram? Quantas consultas foram desmarcadas sem reagendamento? Sem esses dados, está a gerir às cegas — e a repetir erros caros todos os meses.",
+      "A clínica fatura bem, mas qual é a margem de lucro real de cada tratamento? Onde estão a falhar os fechos de orçamentos? Gerir sem um dashboard clínico integrado é apostar às cegas todos os meses.",
   },
   {
     number: "04",
     icon: Cpu,
-    title: "Tecnologia que Prometeu Tudo e Entregou Stress",
+    title: "Tecnologia que Adicionou Complexidade",
     description:
-      "Já teve um software de gestão que ninguém usou. Uma agenda online que duplicava marcações. Um chatbot que confundia os pacientes. Mais sistemas não significa mais eficiência — significa mais problemas para a sua equipa resolver.",
+      "Ferramentas isoladas que não conversam entre si. Um software de gestão engessado; um chatbot genérico que frustra pacientes. Adicionar mais sistemas sem um processo claro apenas aumenta o caos digital.",
   },
   {
     number: "05",
     icon: AlertCircle,
-    title: "Equipa Esgotada, Alta Rotatividade",
+    title: "Desgaste Silencioso do Talento",
     description:
-      "As melhores recepcionistas saem porque as tarefas são repetitivas e sem fim. Contratar e treinar custa tempo e dinheiro. Uma equipa desgastada atende mal — e o paciente sente, mesmo antes de sentar na cadeira.",
+      "A rotatividade do seu staff não acontece por falta de vontade. Acontece quando profissionais sentem que o seu dia se resume a copiar e colar dados entre sistemas, sem tempo para o acolhimento humano.",
   },
   {
     number: "06",
     icon: TrendingDown,
-    title: "O Lucro que Escorre pelos Dedos",
+    title: "Faturação Alta, Lucro Comprimido",
     description:
-      "Sem métricas precisas de CAC (Custo de Aquisição) e LTV (Valor de Vida do Cliente), você fatura muito, mas o lucro líquido é devorado por processos ineficientes. É a sensação de trabalhar muito e não ver a cor do dinheiro no final do mês.",
+      "O volume de consultas aumentou, mas a complexidade operacional também. A margem de lucro é consumida por faltas (no-shows) não geridas de imediato e por custos com processos que já deveriam estar automatizados.",
   },
 ];
 
@@ -70,7 +70,7 @@ const ProblemAgitation = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            O diagnóstico honesto
+            O diagnóstico prático
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ const ProblemAgitation = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            A sua clínica está a perder dinheiro todos os dias — e sabe disso.
+            A sua equipa é excelente, mas o volume de processos manuais trava a sua expansão.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -86,9 +86,8 @@ const ProblemAgitation = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Não é falta de pacientes. Não é falta de esforço. É falta de
-            processos que funcionem enquanto a sua equipa cuida de quem importa:
-            o paciente.
+            Não é falta de pacientes e muito menos de profissionais dedicados.
+            É a burocracia diária, que suga a atenção que deveria ser exclusiva dos seus pacientes.
           </motion.p>
         </div>
 
@@ -129,9 +128,8 @@ const ProblemAgitation = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <p>
-            Cada dia sem processos eficientes é dinheiro que sai pela porta. A
-            questão não é <em>se</em> vai resolver — é{" "}
-            <em>quanto mais vai custar</em> esperar.
+            O lucro não se perde no marketing; a margem escorre pelos atritos operacionais diários.
+            Nós arquitetamos a eficiência sistémica que estanca essa perda de imediato.
           </p>
         </motion.div>
       </div>
