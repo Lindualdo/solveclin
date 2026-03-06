@@ -7,20 +7,28 @@
 .wrapper {
     position: relative;
     overflow: hidden;
-    background: #f8f7f4;
+    /* The background itself transitions from dark→light:
+       ProblemAgitation bottom colour (#172f25) → section bg (#f8f7f4)
+       This creates a fully continuous visual melt instead of an overlay. */
+    background:
+        linear-gradient(to bottom,
+            #172f25 0px,
+            #1a3428 15px,
+            #1e3d2e 30px,
+            #264d38 45px,
+            #2e5a42 65px,
+            #3a6b52 90px,
+            #6a9e84 110px,
+            #a8c9b8 130px,
+            #d4e8df 145px,
+            #f0f6f3 155px,
+            #f8f7f4 165px);
     padding: 0 5% 120px;
 }
 
-/* ── Gradient bridge from the dark (#172f25) section above ───── */
+/* topFade no longer needed — kept as an empty element for backward compat */
 .topFade {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background: linear-gradient(to bottom, #172f25 0%, #1e3d2e 18%, #2a5040 35%, transparent 100%);
-    pointer-events: none;
-    z-index: 0;
+    display: none;
 }
 
 /* ── Decorative blobs ─────────────────────────────────────────── */
@@ -76,8 +84,9 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    /* push content below the topFade gradient bridge */
-    padding-top: 180px;
+    /* Enough space so content starts in the transition zone — visually
+       feels like part of the dark section, then reveals into the light */
+    padding-top: 140px;
 }
 
 /* ── Section label ────────────────────────────────────────────── */

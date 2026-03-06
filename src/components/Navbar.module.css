@@ -40,12 +40,11 @@
     color: #000000;
 }
 
-.logoIcon {
-    width: 20px;
-    height: 20px;
-    background: #000000;
-    border-radius: 4px;
-    transform: rotate(45deg);
+.logoImg {
+    width: auto;
+    height: 52px;
+    object-fit: contain;
+    display: block;
 }
 
 .navLinks {

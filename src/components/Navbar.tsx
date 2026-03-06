@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './Navbar.module.css';
 
@@ -24,8 +25,14 @@ const Navbar = () => {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
             <div className={styles.logo}>
-                <div className={styles.logoIcon}></div>
-                <span>SolveClin</span>
+                <Image
+                    src="/images/solveclin-retangular.png"
+                    alt="SolveClin"
+                    width={180}
+                    height={56}
+                    className={styles.logoImg}
+                    priority
+                />
             </div>
 
             <div className={styles.navLinks}>
