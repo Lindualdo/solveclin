@@ -3,11 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,12 +37,16 @@ const Navbar = () => {
                 />
             </div>
 
-            <div className={styles.navLinks}>
-                <Link href="#features" className={styles.navLink}>Serviços</Link>
-                <Link href="#pricing" className={styles.navLink}>Investimento</Link>
-                <Link href="#faq" className={styles.navLink}>FAQ</Link>
-                <Link href="#contact" className={styles.navLink}>Contato</Link>
+            <div className={`${styles.navLinks} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
+                <Link href="#features" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Serviços</Link>
+                <Link href="#pricing" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Investimento</Link>
+                <Link href="#faq" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+                <Link href="#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contato</Link>
             </div>
+
+            <button className={styles.mobileToggle} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
+                {mobileMenuOpen ? <X size={24} color="#000" /> : <Menu size={24} color="#000" />}
+            </button>
         </motion.nav>
     );
 };

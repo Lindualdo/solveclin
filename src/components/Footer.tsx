@@ -37,6 +37,9 @@ const Footer = () => {
 
             <div className={styles.bottom}>
                 <p>&copy; 2026 SolveClin. Lisboa, Portugal. Todos os direitos reservados.</p>
+                <p style={{ marginTop: '8px', fontSize: '0.85rem', opacity: 0.8 }}>
+                    powered by : <a href="https://aldosantos.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>Aldo Santos</a>
+                </p>
             </div>
         </footer>
     );

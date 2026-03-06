@@ -15,6 +15,10 @@
   z-index: 0;
 }
 
+.desktopOnly {
+  display: inline;
+}
+
 /* White overlay + smooth fade into dark petrol section at the bottom */
 .heroBg::after {
   content: "";
@@ -170,8 +174,34 @@
 }
 
 @media (max-width: 768px) {
+  .heroSection {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heroBg {
+    background-position: 70% center;
+  }
+
+  .desktopOnly {
+    display: none;
+  }
+
   .hero {
-    padding-top: var(--sp-16);
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .title {
+    font-size: clamp(32px, 8vw, 42px);
+    margin-bottom: var(--sp-2);
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: var(--sp-4);
   }
 
   .actions {
@@ -198,6 +228,10 @@
 
   .highlightCard {
     transform: translateY(0) !important;
+  }
+
+  .mockupContainer {
+    display: none;
   }
 }
 
