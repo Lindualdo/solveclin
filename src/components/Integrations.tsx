@@ -150,18 +150,18 @@ const AutomationFlowSVG = () => (
         ))}
         {/* LinkedIn */}
         <motion.g initial={{ opacity: 0, x: -14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
-            <SvgIcon x={82} y={62}><PathLinkedIn /></SvgIcon>
-            <text x="110" y="82" fontSize="10" fill="#374151" fontWeight="600" textAnchor="middle" style={{ fontFamily: 'system-ui' }}>LinkedIn</text>
+            <SvgIcon x={75} y={74}><PathLinkedIn /></SvgIcon>
+            <text x="91" y="77.5" fontSize="10" fill="#374151" fontWeight="600" textAnchor="start" style={{ fontFamily: 'system-ui' }}>LinkedIn</text>
         </motion.g>
         {/* Facebook */}
         <motion.g initial={{ opacity: 0, x: -14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.18 }}>
-            <SvgIcon x={82} y={138}><PathFacebook /></SvgIcon>
-            <text x="110" y="158" fontSize="10" fill="#374151" fontWeight="600" textAnchor="middle" style={{ fontFamily: 'system-ui' }}>Facebook</text>
+            <SvgIcon x={72} y={150}><PathFacebook /></SvgIcon>
+            <text x="88" y="153.5" fontSize="10" fill="#374151" fontWeight="600" textAnchor="start" style={{ fontFamily: 'system-ui' }}>Facebook</text>
         </motion.g>
         {/* Google */}
         <motion.g initial={{ opacity: 0, x: -14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.26 }}>
-            <SvgIcon x={82} y={214}><PathGoogle /></SvgIcon>
-            <text x="110" y="234" fontSize="10" fill="#374151" fontWeight="600" textAnchor="middle" style={{ fontFamily: 'system-ui' }}>Google Ads</text>
+            <SvgIcon x={70} y={226}><PathGoogle /></SvgIcon>
+            <text x="86" y="229.5" fontSize="10" fill="#374151" fontWeight="600" textAnchor="start" style={{ fontFamily: 'system-ui' }}>Google Ads</text>
         </motion.g>
 
         {/* ════ CENTER NODE (SolveClin logo) ════ */}
@@ -207,13 +207,13 @@ const AutomationFlowSVG = () => (
         ))}
         {/* WhatsApp */}
         <motion.g initial={{ opacity: 0, x: 14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.7 }}>
-            <SvgIcon x={670} y={62}><PathWhatsApp /></SvgIcon>
-            <text x="708" y="82" fontSize="10" fill="#374151" fontWeight="600" textAnchor="middle" style={{ fontFamily: 'system-ui' }}>WhatsApp</text>
+            <SvgIcon x={666} y={74}><PathWhatsApp /></SvgIcon>
+            <text x="682" y="77.5" fontSize="10" fill="#374151" fontWeight="600" textAnchor="start" style={{ fontFamily: 'system-ui' }}>WhatsApp</text>
         </motion.g>
         {/* Instagram */}
         <motion.g initial={{ opacity: 0, x: 14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.8 }}>
-            <SvgIcon x={670} y={158}><PathInstagram /></SvgIcon>
-            <text x="708" y="178" fontSize="10" fill="#374151" fontWeight="600" textAnchor="middle" style={{ fontFamily: 'system-ui' }}>Instagram</text>
+            <SvgIcon x={666} y={170}><PathInstagram /></SvgIcon>
+            <text x="682" y="173.5" fontSize="10" fill="#374151" fontWeight="600" textAnchor="start" style={{ fontFamily: 'system-ui' }}>Instagram</text>
         </motion.g>
         {/* CRM / Agenda */}
         <motion.g initial={{ opacity: 0, x: 14 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.9 }}>
