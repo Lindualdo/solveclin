@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div>Exclusivo para Sócios e Gestores de Clínicas de Saúde e Estética</div>
+          <div>Exclusivo para Sócios e Gestores de Clínicas - Saúde e Estética</div>
         </motion.div>
 
         <motion.h1
