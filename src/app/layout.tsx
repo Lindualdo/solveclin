@@ -22,6 +22,22 @@ export const metadata: Metadata = {
   title: "SolveClin | Engenharia de Processos e IA para Clínicas em Lisboa",
   description:
     "Pare de perder pacientes para a concorrência. Especialistas em Portugal com 20 anos de experiência em automação de clínicas para zerar a cadeira vazia.",
+  openGraph: {
+    title: "SolveClin | Engenharia de Processos e IA para Clínicas em Lisboa",
+    description: "Pare de perder pacientes para a concorrência. Especialistas em Portugal com 20 anos de experiência em automação.",
+    url: "https://solveclin.pt",
+    siteName: "SolveClin",
+    images: [
+      {
+        url: "/images/solveclin-retangular.png",
+        width: 1200,
+        height: 630,
+        alt: "SolveClin Logo",
+      },
+    ],
+    locale: "pt_PT",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
