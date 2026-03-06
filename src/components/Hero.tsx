@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div>Soluções para clínicas odontológicas, médicas e bem-estar</div>
+          <div>Exclusivo para Sócios e Gestores de Clínicas de Saúde e Estética</div>
         </motion.div>
 
         <motion.h1
@@ -29,9 +29,9 @@ const Hero = () => {
         >
           Reduza até 30% do{" "}
           <br className={styles.desktopOnly} />
-          custo operacional e{" "}
+          custos operacional{" "}
           <br className={styles.desktopOnly} />
-          <em>aumente 40% nas vendas.</em>
+          <em>enquanto aumenta suas vendas em 40%</em>
         </motion.h1>
 
         <motion.p
@@ -40,8 +40,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          Tecnologia e automação sem um processo eficiente é jogar dinheiro fora.
-          Primeiro otimizamos a sua operação, depois automatizamos com eficiência.
+          Transforme o seu fluxo de pacientes com agentes de IA de alta performance. Criamos uma máquina de vendas previsível que atende, qualifica e agenda 24/7, mantendo a excelência e a humanização do seu negócio
         </motion.p>
 
         <motion.div
