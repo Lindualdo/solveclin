@@ -27,9 +27,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         >
-          Reduza até 30% do
+          Reduza até 30% do{" "}
           <br className={styles.desktopOnly} />
-          custo operacional e
+          custo operacional e{" "}
           <br className={styles.desktopOnly} />
           <em>aumente 40% nas vendas.</em>
         </motion.h1>
