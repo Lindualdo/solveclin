@@ -28,8 +28,8 @@ const Navbar = () => {
                 <Image
                     src="/images/solveclin-retangular.png"
                     alt="SolveClin"
-                    width={180}
-                    height={56}
+                    width={234}
+                    height={73}
                     className={styles.logoImg}
                     priority
                 />
@@ -41,10 +41,6 @@ const Navbar = () => {
                 <Link href="#faq" className={styles.navLink}>FAQ</Link>
                 <Link href="#contact" className={styles.navLink}>Contato</Link>
             </div>
-
-            <button className={styles.cta}>
-                Agendar Diagnóstico
-            </button>
         </motion.nav>
     );
 };

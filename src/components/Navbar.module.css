@@ -42,7 +42,7 @@
 
 .logoImg {
     width: auto;
-    height: 52px;
+    height: 68px;
     object-fit: contain;
     display: block;
 }
@@ -57,27 +57,14 @@
     font-size: 15px;
     font-weight: 600;
     letter-spacing: -0.5px;
-    color: #4B5563;
+    color: var(--accent);
     transition: color 0.2s ease;
 }
 
 .navLink:hover {
-    color: #000000;
+    color: var(--accent-hover);
 }
 
-.cta {
-    background: #2D364D;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: transform 0.2s ease;
-}
-
-.cta:hover {
-    transform: scale(1.05);
-}
 
 @media (max-width: 768px) {
     .navLinks {
