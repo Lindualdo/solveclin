@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div>Exclusivo para Diretores Clínicos e Gestores - Saúde e Bem-Estar</div>
+          <div>Exclusivo para Sócios e Gestores de Clínicas - Saúde e Estética</div>
         </motion.div>
 
         <motion.h1
@@ -27,11 +27,11 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         >
-          Elimine a burocracia digital e reduza até 30% do{" "}
+          Reduza até 30% do{" "}
           <br className={styles.desktopOnly} />
-          custo operacional{" "}
+          custos operacional{" "}
           <br className={styles.desktopOnly} />
-          <em>enquanto protege a sua margem de lucro</em>
+          <em>enquanto aumenta suas vendas em 40%</em>
         </motion.h1>
 
         <motion.p
@@ -40,7 +40,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          Transforme o caos administrativo numa operação inteligente. Otimizamos os seus processos e implementamos agentes de IA empáticos que qualificam e agendam 24/7, devolvendo tempo à sua equipa para um atendimento premium.
+          Transforme o seu fluxo de pacientes com agentes de IA de alta performance. Criamos uma máquina de vendas previsível que atende, qualifica e agenda 24/7, mantendo a excelência e a humanização do seu negócio
         </motion.p>
 
         <motion.div
@@ -58,7 +58,7 @@ const Hero = () => {
               <ArrowRight size={18} />
             </button>
             <span className={styles.microcopy}>
-              Relatório de ROI + Sessão de Viabilidade
+              Sem compromisso · Resposta em 24h
             </span>
           </div>
           <button

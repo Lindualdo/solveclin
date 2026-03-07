@@ -10,46 +10,46 @@ const plans = [
         name: "Diagnóstico Estratégico 360º",
         price: "397€",
         period: "único",
-        description: "A porta de entrada. Um diagnóstico prático para medir furos na sua operação e desenhar o fluxo de ganho eficiente.",
+        description: "A porta de entrada obrigatória para a reestruturação da sua operação. Identificamos os furos reais e a origem da perda de lucro.",
         features: [
-            "Mapeamento de Processos Ativos",
-            "Identificação de Atritos Burocráticos",
-            "Relatório de Lucro Oculto",
-            "Plano de Ação para Automação",
-            "Custo dedutível em planos avançados"
+            "Auditoria de Furos Operacionais",
+            "Mapeamento de Integrações de Sistemas",
+            "Relatório Analítico de Lucro Oculto",
+            "Plano Executivo para Eliminar Entraves",
+            "Valor dedutível em Projetos de Escala"
         ],
         popular: false,
         buttonText: "Agendar o Diagnóstico 360º"
     },
     {
-        name: "Agente de Atendimento IA",
+        name: "Otimização de Atendimento",
         price: "497€",
-        period: "setup inicial",
-        description: "Recuperação imediata de faturação. O seu agente qualifica e agenda com empatia humana, garantindo 24/7.",
+        period: "setup + 297€/mês",
+        description: "Recuperação imediata de faturação. O seu Agente de IA qualifica, atende e agenda pacientes 24/7 com empatia máxima.",
         features: [
-            "Atendimento 24/7 com a Sua Identidade",
-            "Agendamento de Consultas Simplificado",
-            "Qualificação Automática de Leads",
-            "Follow-ups e Lembretes",
-            "Manutenção Mensal: 297€"
+            "Diagnóstico de Conversão (Incluso)",
+            "Agente IA de Alta Performance",
+            "Automação e Agendamento Direto",
+            "Follow-ups e Recuperação de Leads",
+            "Resposta Imediata pelo WhatsApp"
         ],
         popular: true,
-        buttonText: "Quero Este Agente a Trabalhar Por Mim"
+        buttonText: "Quero Otimizar o Atendimento"
     },
     {
-        name: "Engenharia Operacional",
+        name: "Engenharia de Performance",
         price: "Projeto",
         period: "sob orçamento",
-        description: "Para clínicas que procuram domínio de mercado com automação de backoffice e previsibilidade total ponta a ponta.",
+        description: "Para clínicas líderes que pretendem uma experiência unificada e sem quebras, da captação de leads à retenção do doente.",
         features: [
-            "Dashboards em Tempo Real",
-            "Fim de Todos os Trabalhos Manuais",
-            "Campanhas de Marketing Orientadas a LTV",
-            "Landing Pages de Alta Conversão",
-            "Plano Executivo com KPI's de Escala"
+            "Ecossistema de Dashboards Analíticos",
+            "Integração Total de Sistemas e Backoffice",
+            "Campanhas de Escala focadas em LTV",
+            "Landing Pages de Elevada Conversão",
+            "Previsibilidade Absoluta de Crescimento"
         ],
         popular: false,
-        buttonText: "Falar Sobre a Engenharia Operacional"
+        buttonText: "Falar Sobre Engenharia de Escala"
     }
 ];
 

@@ -7,7 +7,7 @@ import styles from './HowItWorks.module.css';
 const steps = [
     {
         num: "1",
-        title: "Diagnóstico e Reestruturação",
+        title: "Reestruturação",
         description: "Mapeamos ao detalhe os processos atuais da sua operação. Identificamos exatemente onde a sua margem de lucro diminui e ajudamos a reduzir atritos operacionais.",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -21,7 +21,7 @@ const steps = [
     },
     {
         num: "2",
-        title: "Integração Otimizada",
+        title: "Otimização",
         description: "Com a casa organizada, orquestramos a sua área digital. Retiramos os dados espalhados e passamos tudo para workflows que correm em contexto estruturado e invisível.",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -34,7 +34,7 @@ const steps = [
     },
     {
         num: "3",
-        title: "Inteligência IA e Escala",
+        title: "Inteligência",
         description: "Implementamos IA para assumir o tempo repetitivo, de modo que consiga ganhar com processos altamente performantes os que se revertem num painel prático para análise de margem de lucro e eficiência diária.",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
